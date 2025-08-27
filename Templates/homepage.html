@@ -6,24 +6,19 @@
     <title>Figma Homepage</title>
     <style>
         .Image{
-            position: relative;
-            height: 400px;
-            width:1000px;
-            object-fit:cover;
+            display:flex;
+            height: 10px;
+            justify-content: center; /* center horizontally */
+            align-items: center;     /* center vertically */
+            text-align: center;
         }
 
         #Header{
-            position: absolute; 
-            top: 0;
-            left: 0;
-            width: 100%;
-            height:100%;
-
             display: flex;
             flex-direction: column;
             text-align: center;
             align-items: center;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             
             justify-content: center;
 
@@ -55,43 +50,46 @@
                 text-decoration:none;
                 color: black;
             }
+
     </style>
 </head>
 <body>
-    <img class="Image" src="https://tse1.mm.bing.net/th/id/OIP.lwyzCYRSNDE4QAM11M6FJgHaEK?r=0&w=1920&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" alt="swimming" />
+        <div class="Image" >
+            <img class="pht" src="https://tse1.mm.bing.net/th/id/OIP.lwyzCYRSNDE4QAM11M6FJgHaEK?r=0&w=1920&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" alt="swimming" />
+        </div>
 
     <div class="heading">   
-    <h1 id="Header">Welcome to Hatfield Junior Swimming School (HJSS)</h1>
+        <h1 id="Header">Welcome to Hatfield Junior Swimming School (HJSS)</h1>
 
-    <h1>What we do</h1>
-    <p>We offer swimming lessons for children aged 4 to 11, from beginners to advanced levels. Our small class sizes and experienced coaches ensure every learner thrives in a fun and supportive environment. </p>
+        <h1>What we do</h1>
+        <p>We offer swimming lessons for children aged 4 to 11, from beginners to advanced levels. Our small class sizes and experienced coaches ensure every learner thrives in a fun and supportive environment. </p>
 
-<b><h3>Want to register with us for free? Click the link to join.</h3></b>
+        <b><h3>Want to register with us for free? Click the link to join.</h3></b>
 
-    <div class="mybtn">
-        <a href="registrationpage.html" class="btn"  target="_blank">Register/Log In</a>
+        <div class="mybtn">
+            <a href="/registration" class="btn"  target="_blank">Register/Log In</a>
+        </div>
     </div>
-</div>
 
-<div class="Grades">
-<h1>Our Swimming Grades</h1>
-<p>We offer a structured program across six grade levels, helping children build their skills step-by-step.</p>
-<ul>
-   <li>Grade 0: New to swimming, water confidence activities.</li>
+    <div class="Grades">
+        <h1>Our Swimming Grades</h1>
+        <p>We offer a structured program across six grade levels, helping children build their skills step-by-step.</p>
+        <ul>
+            <li>Grade 0: New to swimming, water confidence activities.</li>
 
-    <li>Grade 1: Basic stroke introduction and safety skills.</li>
+            <li>Grade 1: Basic stroke introduction and safety skills.</li>
 
-    <li>Grade 2: Developing stroke technique and stamina.</li>
+            <li>Grade 2: Developing stroke technique and stamina.</li>
 
-    <li>Grade 3: Improving efficiency in multiple strokes.</li>
+            <li>Grade 3: Improving efficiency in multiple strokes.</li>
 
-    <li>Grade 4: Advanced stroke skills and endurance.</li>
+            <li>Grade 4: Advanced stroke skills and endurance.</li>
 
-    <li>Grade 5: Pre-competition skills and performance training.</li> 
-</ul>
-<p>Each class lasts one hour and are available on Monday, Wednesday, and Friday (4–5 pm, 5–6 pm, 6–7 pm) and on Saturday (2–3 pm, 3–4 pm). </p>
-<h4>To view more click here: <button> View Timetables</button></h4>
-</div>
+            <li>Grade 5: Pre-competition skills and performance training.</li> 
+        </ul>
+        <p>Each class lasts one hour and are available on Monday, Wednesday, and Friday (4–5 pm, 5–6 pm, 6–7 pm) and on Saturday (2–3 pm, 3–4 pm). </p>
+        <h4>To view more click here: <button> View Timetables</button></h4>
+    </div>
 
 <div class="Announce">
 <h1>Announcements</h1>
