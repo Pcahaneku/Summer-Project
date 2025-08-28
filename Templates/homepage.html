@@ -6,69 +6,90 @@
     <title>Figma Homepage</title>
     <style>
         .Image{
+            position: absolute;
             display:flex;
-            height: 10px;
-            justify-content: center; /* center horizontally */
-            align-items: center;     /* center vertically */
+            height: 30vh;          /* banner height (adjust as you like) */
+            justify-content: center; 
+            align-items: center;   
+            overflow: hidden;
+            object-fit:fill ;
+            
+        }
+
+        .heading1{
+            position: relative;
+            display:flex;
+            padding-top:50px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .heading2{
+                margin-top: 150px;
+                font-family: Arial, Helvetica, sans-serif
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        h3{
+            display: flex;
+            justify-content: center;
+        }
+            
+        .mybtn {
+            display: block;
             text-align: center;
         }
 
-        #Header{
+        .btn{
+            background-color: #ceedfa;
+            position: relative;
+            padding: 10px;
+            border-style: none;
+            text-decoration:none;
+            color: black;
+        }
+
+        .content-item{
             display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            margin-bottom: 80px;
-            
-            justify-content: center;
+            gap: 10px;
+        }
 
-            color: #fff;}
+        .info{
+            display: flex;
+            padding-top:-20px;
+        }
 
-            .heading{
-                font-family: Arial, Helvetica, sans-serif
-              }
-
-              h1{
-                font-family: Arial, Helvetica, sans-serif
-              }
-
-            h3{
-                display: flex;
-                justify-content: center;
-            }
-            
-            .mybtn {
-                display: block;
-                text-align: center;
-            }
-
-            .btn{
-                background-color: #ceedfa;
-                position: relative;
-                padding: 10px;
-                border-style: none;
-                text-decoration:none;
-                color: black;
-            }
+        #us{
+            font-family: Arial, Helvetica, sans-serif
+        }
 
     </style>
 </head>
 <body>
+    
         <div class="Image" >
-            <img class="pht" src="https://tse1.mm.bing.net/th/id/OIP.lwyzCYRSNDE4QAM11M6FJgHaEK?r=0&w=1920&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" alt="swimming" />
-        </div>
+            <img class="pht" src="https://wallpaperaccess.com/full/1108278.jpg" alt="swimming"
 
-    <div class="heading">   
+    <div> 
+        <div class="heading1">
         <h1 id="Header">Welcome to Hatfield Junior Swimming School (HJSS)</h1>
-
-        <h1>What we do</h1>
-        <p>We offer swimming lessons for children aged 4 to 11, from beginners to advanced levels. Our small class sizes and experienced coaches ensure every learner thrives in a fun and supportive environment. </p>
-
-        <b><h3>Want to register with us for free? Click the link to join.</h3></b>
-
-        <div class="mybtn">
-            <a href="/registration" class="btn"  target="_blank">Register/Log In</a>
         </div>
+
+        <div class="heading2">
+            <h1>What we do</h1>
+            <p>We offer swimming lessons for children aged 4 to 11, from beginners to advanced levels. Our small class sizes and experienced coaches ensure every learner thrives in a fun and supportive environment. </p>
+
+            <b><h3>Want to register with us for free? Click the link to join.</h3></b>
+
+            <div class="mybtn">
+                <a href="/Register With Us" class="btn">Register/Log In</a>
+            </div>
     </div>
 
     <div class="Grades">
@@ -98,9 +119,14 @@
 
 <div class="Contact"></div>
 <footer>
-    <h4>Get In touch with us:</h4>
-    <h4>Email:</h4><p>info@hjsswimschool.com</p>
-    <h4>Phone:</h4><p>01234 567890</p>
+    <h4 id="us">Get In touch with us:</h4>
+    <div class="contact-item">
+    <h4>Email:</h4><p class="info">info@hjsswimschool.com</p>
+    </div>
+
+    <div>
+    <h4 class="contact-item">Phone:</h4><p class="info">01234 567890</p>
+    </div>
 </footer>
 
 
