@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma Homepage</title>
     <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif
+
+        }
+
+        .body2{
+            padding-left: 10px;
+        }
+
         .Image{
             position: absolute;
             display:flex;
@@ -13,8 +23,8 @@
             align-items: center;   
             overflow: hidden;
             object-fit:fill ;
-            
-        }
+            font-family: Arial, Helvetica, sans-serif
+            }
 
         .heading1{
             position: relative;
@@ -24,27 +34,25 @@
             align-items: center;
             justify-content: center;
             color: #fff;
-            font-family: Arial, Helvetica, sans-serif
         }
 
         .heading2{
-                margin-top: 150px;
-                font-family: Arial, Helvetica, sans-serif
-        }
+               margin-top: 150px;
+            }
 
         h1{
             font-family: Arial, Helvetica, sans-serif
-        }
+            }
 
         h3{
             display: flex;
             justify-content: center;
-        }
+            }
             
         .mybtn {
             display: block;
             text-align: center;
-        }
+            }
 
         .btn{
             background-color: #ceedfa;
@@ -53,8 +61,11 @@
             border-style: none;
             text-decoration:none;
             color: black;
-        }
+            border-radius: 5px;
+            }
 
+
+        
         .content-item{
             display: flex;
             gap: 10px;
@@ -63,19 +74,48 @@
         .info{
             display: flex;
             padding-top:-20px;
+               
         }
 
-        #us{
-            font-family: Arial, Helvetica, sans-serif
+
+    
+        .Grades{
+            color: #ceedfa;
+            
+            padding: 10px;
+        }
+
+        .us{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: -50px;
+        }
+
+        .Contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            background-color: #ceedfa;
+            border-radius: 30px;
+            gap: 5px
+        }
+
+        #space{
+            margin-right: 15px;
         }
 
     </style>
 </head>
 <body>
-    
+<div class="body2">
         <div class="Image" >
-            <img class="pht" src="https://wallpaperaccess.com/full/1108278.jpg" alt="swimming"
-
+            <img class="pht" src="https://wallpaperaccess.com/full/1108278.jpg" alt="swimming">
+        </div>
+<div class="body2">
     <div> 
         <div class="heading1">
         <h1 id="Header">Welcome to Hatfield Junior Swimming School (HJSS)</h1>
@@ -112,28 +152,20 @@
         <h4>To view more click here: <button> View Timetables</button></h4>
     </div>
 
-<div class="Announce">
-<h1>Announcements</h1>
-<p>New Autumn Term starting September! Limited spaces available. Register early to secure your spot.</p>
+    <div class="Announce">
+        <h1>Announcements</h1>
+        <p>New Autumn Term starting September! Limited spaces available. Register early to secure your spot.</p>
+    </div>
+
+    <div class="us">
+        <h4>Get In touch with us:</h4>
+    </div>
+
+    <div class="Contact">
+        <h4>Email:</h4><p class="info" id="space">info@hjsswimschool.com</p>
+        <h4>Phone:</h4><p class="info">01234 567890</p>
+    </div>
+
 </div>
-
-<div class="Contact"></div>
-<footer>
-    <h4 id="us">Get In touch with us:</h4>
-    <div class="contact-item">
-    <h4>Email:</h4><p class="info">info@hjsswimschool.com</p>
-    </div>
-
-    <div>
-    <h4 class="contact-item">Phone:</h4><p class="info">01234 567890</p>
-    </div>
-</footer>
-
-
-
-
-
-
-
 </body>
 </html>
