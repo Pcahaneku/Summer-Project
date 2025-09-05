@@ -10,8 +10,32 @@
             font-family:Arial, Helvetica, sans-serif;
         }
 
-        .sign{
-            margin-top: -10px;
+        .hero {
+            width: 100%;
+            margin: 0;   
+            padding: 0;  
+        }
+
+        .Image{
+            position: absolute;
+            display: flex;
+            height: 30vh;
+            width: 100%;
+            margin-top: 0px;
+            justify-content: center; 
+            align-items: center;   
+            overflow: hidden;
+            object-fit: fill;
+            }
+
+        .heading1{
+            position: relative;
+            display: flex;
+            padding-top: 50px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
         }
 
         .mybtn {
@@ -27,29 +51,191 @@
             text-decoration:none;
             color: black;
         }
+
+        .nav-bar{
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            gap: 10px;
+            bottom: 5px;
+        }
+
+        .nav-bar a{
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        a:hover{
+            color: #ffffff;
+        }
+
+        .link1{
+            background-color: #ceedfa;
+            border-radius: 10px;
+            padding: 10px 25px;
+            
+        }
+
+        .link2{
+            background-color: #ceedfa;
+            border-radius: 10px;
+            padding: 10px 25px;
+        }
+
+        .link3{
+            background-color: #ceedfa;
+            border-radius: 10px;
+            padding: 10px 25px;
+        }
+
+        .para{
+            margin-top: -10px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }  
+
+        .head{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 45px;
+        }
+
+        .Form{
+            display: block;
+            text-align: center;
+            padding-left: 42%;
+            
+           
+        }
+        
+
+        .Form2{
+            display: block;
+            text-align: center;
+            margin-top: -15%;
+            padding-left: 240px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        #f2{
+            padding-top: 30px;
+        }
+        #f3{
+            padding-top: 30px;
+        }
+        #f4{
+            padding-top: 30px;
+        }
+        #f5{
+            padding-top: 30px;
+        }
+
+        #fp2{
+            padding-top: 30px;
+        }
+        #fp3{
+            padding-top: 30px;
+        }
+        #fp4{
+            padding-top: 30px;
+        }
+        #fp5{
+            padding-top: 30px;
+        }
+
+        .submit{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
     </style>
 </head>
 
 <body>
 
-<div>
-    <h1> Register With Us!</h1>
-    <p class="sign">Sign up for swimming lessons today!</p>
-</div>
+<div class="hero">
+        <div class="Image" >
+            <img class="pht" src="https://wallpaperaccess.com/full/1108278.jpg" alt="swimming">
+        </div>
 
-<div>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/Register With Us">Register With Us</a></li>
-        <li><a href="/timetable">Timetables</a></li>
-    </ul>
-</div>
-
-
-
-<div class="mybtn">
-    <a href="/" class="btn" >Homepage</a>
-</div>
     
+        <div class="heading1">
+            <h1 id="Header">Welcome to Hatfield Junior Swimming School (HJSS)</h1>
+        </div>
+</div>
+
+<div>
+    <nav class="nav-bar">
+        <a class="link1" href="/"><b>Home</b></a>
+        <a class="link2" href="/Register With Us"><b>Register With Us</b></a>
+        <a class="link2" href="/timetable"><b>Timetables</b></a>
+    </nav>
+</div>
+
+<div class="header2">
+    <h1 class="head"> Register With Us!</h1>
+    <p class="para">Sign up for swimming lessons today!</p>
+</div>
+
+<div class="Form">
+    <form id="f1">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form id="f2">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form id="f3">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form id="f4">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form id="f5">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+</div>
+
+<div class="Form2">
+    <form id="fp1">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form id="fp2">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form id="fp3">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form id="fp4">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+    <form id="fp5">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+</div>
+
+
+<div class="submit">
+    <button class="sub" type="submit">Register</button>
+</div>
 </body>
 </html>

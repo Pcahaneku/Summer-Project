@@ -8,19 +8,27 @@
 
         body{
             font-family: Arial, Helvetica, sans-serif;
+            margin-top: -35px;
+            margin-right: 20px;
+            margin-left: 5px
+        }
+
+        .hero {
+            width: 100%;
+            margin: 0;   
+            padding: 0;
         }
 
         .Image{
             position: absolute;
-            display:flex;
+            display: flex;
             height: 30vh;
             width: 100%;
+            margin-top: 0px;
             justify-content: center; 
             align-items: center;   
             overflow: hidden;
-            object-fit: fill ;
-            font-family: Arial, Helvetica, sans-serif;
-
+            object-fit: fill;
             }
 
         .heading1{
@@ -54,6 +62,10 @@
             text-decoration: none;
             color:#bce7f9;
         }
+
+        .timetable:hover{
+            color: black;
+        }
             
         .mybtn {
             display: block;
@@ -77,8 +89,7 @@
 
         .info{
             display: flex;
-            padding-top:-20px;
-               
+            padding-top: -20px;
         }
 
         .Grades{
@@ -126,19 +137,24 @@
         .nav-bar{
             position: relative;
             z-index: 10;
-            list-style-type: none;
+            width: 100%;
+            justify-content: center;
             text-align: center;
             overflow: hidden;
-            display: block;
-            padding: 14px 16px;
-            margin-bottom: -30px;
-            
+            display: flex;
+
+            gap: 10px;
+            bottom: -190px;
         }
 
         .nav-bar a{
             color: black;
             text-decoration: none;
             font-size: 16px;
+        }
+
+        a:hover{
+            color: #ffffff;
         }
 
         .link1{
@@ -152,14 +168,12 @@
             background-color: #ceedfa;
             border-radius: 10px;
             padding: 10px 25px;
-            
         }
 
         .link3{
             background-color: #ceedfa;
             border-radius: 10px;
             padding: 10px 25px;
-            
         }
         
     </style>
@@ -175,15 +189,16 @@
     </nav>
 </div>
 
-<div class="body2">
+<div class="hero">
         <div class="Image" >
             <img class="pht" src="https://wallpaperaccess.com/full/1108278.jpg" alt="swimming">
         </div>
-<div class="body2">
-    <div> 
+
+    
         <div class="heading1">
-        <h1 id="Header">Welcome to Hatfield Junior Swimming School (HJSS)</h1>
+            <h1 id="Header">Welcome to Hatfield Junior Swimming School (HJSS)</h1>
         </div>
+</div>
 
         <div class="heading2">
             <h1>What we do</h1>
@@ -192,9 +207,9 @@
             <b><h3>Want to register with us for free? Click the link to join.</h3></b>
 
             <div class="mybtn">
-                <a href="/Register With Us" class="btn">Register/Log In</a>
+                <a href="/Register With Us" class="btn">Register Now!</a>
             </div>
-    </div>
+        </div>
 
     <div class="Grades">
         <h1>Our Swimming Grades</h1>
