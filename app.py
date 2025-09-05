@@ -14,5 +14,9 @@ def registration():
 def timetable():
          return render_template('timetable.html')
 
+@app.route('/submit')
+def submit():
+        return render_template('submit.html')
+
 if __name__ == '__main__':
         app.run(debug=True)

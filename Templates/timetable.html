@@ -6,20 +6,20 @@
     <title>Timetables</title>
 
     <style>
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-        }
+      body{
+        font-family:Arial, Helvetica, sans-serif;
+      }
 
-        .Image{
-            position: absolute;
-            display: flex;
-            height: 30vh;
-            width: 100%;
-            margin-top: 0px;
-            justify-content: center; 
-            align-items: center;   
-            overflow: hidden;
-            object-fit: fill;
+      .Image{
+        position: absolute;
+        display: flex;
+        height: 30vh;
+        width: 100%;
+        margin-top: 0px;
+        justify-content: center; 
+        align-items: center;   
+        overflow: hidden;
+        object-fit: fill;
             }
 
         .heading1{
@@ -40,39 +40,67 @@
             text-align: center;
             overflow: hidden;
             display: flex;
-
             gap: 10px;
-            bottom: -190px;
+            bottom: 5px;
         }
 
         .nav-bar a{
-            color: black;
+            color: rgb(255, 255, 255);
             text-decoration: none;
             font-size: 16px;
         }
 
         a:hover{
-            color: #ffffff;
+            color: #000000;
+            background-color: #ffffff;
         }
 
         .link1{
-            background-color: #ceedfa;
+             background-color: #b4e5fa;
             border-radius: 10px;
             padding: 10px 25px;
             
         }
 
         .link2{
-            background-color: #ceedfa;
+             background-color: #b4e5fa;
             border-radius: 10px;
             padding: 10px 25px;
         }
 
         .link3{
-            background-color: #ceedfa;
+            background-color: #b4e5fa;
             border-radius: 10px;
             padding: 10px 25px;
         }
+
+        .swim{
+          margin-top: 60px;
+
+        }
+        
+
+        .timetable-container{
+          padding-left: 20px;
+          
+        }
+
+        .table{
+          
+          width: 100%;
+        }
+        
+        th, td {
+          border: 1px solid #cee1ff;
+          padding: 15px;
+          text-align: center;
+
+        .day {
+          background-color: #d5e9ff;
+          color:white;
+        }
+}
+
     </style>
 </head>
 <body>
@@ -81,7 +109,6 @@
             <img class="pht" src="https://wallpaperaccess.com/full/1108278.jpg" alt="swimming">
         </div>
 
-    
         <div class="heading1">
             <h1 id="Header">Welcome to Hatfield Junior Swimming School (HJSS)</h1>
         </div>
@@ -89,10 +116,54 @@
 
 <div>
     <nav class="nav-bar">
-        <a class="link1" href="/"><b>Home</b></a>
-        <a class="link2" href="/Register With Us"><b>Register With Us</b></a>
-        <a class="link2" href="/timetable"><b>Timetables</b></a>
+        <a class="link1" href="/">Home</a>
+        <a class="link2" href="/Register With Us">Register With Us</a>
+        <a class="link2" class="active" href="/timetable">Timetables</a>
     </nav>
 </div>
+
+<div class="timetable-container">
+  <h1 class="swim">Swimming Timetable</h1>
+  <table class="table">
+    <thead class="day">
+      <tr>
+        <th>Day</th>
+        <th>4–5 pm</th>
+        <th>5–6 pm</th>
+        <th>6–7 pm</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>Grade 0–2</td>
+        <td>Grade 3–4</td>
+        <td>Grade 5</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Grade 0–2</td>
+        <td>Grade 3–4</td>
+        <td>Grade 5</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Grade 0–2</td>
+        <td>Grade 3–4</td>
+        <td>Grade 5</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>2–3 pm: Grade 0–2</td>
+        <td>3–4 pm: Grade 3–5</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note">Each class lasts 1 hour. Max 4 learners per session. Ages 4–11.</p>
+</div>
+
+
+
 </body>
 </html>
